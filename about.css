@@ -1,0 +1,50 @@
+.about-page {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 0px;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    align-content: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.developer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.developer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.developer p {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
